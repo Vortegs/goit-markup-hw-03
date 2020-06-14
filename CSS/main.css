@@ -1,189 +1,341 @@
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196F3;
-    --primary-background-color: #ffffff;
-    --button-text: #ffffff;
-    --white-text: #ffffff;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-background-color: #ffffff;
+  --button-text: #ffffff;
+  --white-text: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03rem;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03rem;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .text-style-bold {
-    font-weight: 700;
+  font-weight: 700;
+}
 
+.container {
+  width: 1200px;
+  margin-left: 200px;
+  padding: 0 15px;
+}
+
+header > .container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* contacts */
+.head-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.head-contact .item + .item {
+  margin-left: 30px;
 }
 
 .main-menu {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02rem;
-    color: var(--title-text-color);
+  display: block;
+  padding: 32px 0 32px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02rem;
+  color: var(--title-text-color);
 }
 
 .current-page {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .logo {
-    color: var(--title-text-color);
-    font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.2px;
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2px;
 }
 
 .logo-first {
-    color: #2196F3;
+  color: #2196f3;
 }
 
 .link:hover,
 .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .contacts {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02rem;
-    color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02rem;
+  color: var(--primary-text-color);
+}
+
+.hero-section {
+  text-align: center;
+  background-color: #000000;
 }
 
 .hero {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06rem;
-    color: #FFFFFF;
-
-    /* temporary background */
-    background-color: #000000;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
 }
 
-.button-primary {
-    color: var(--button-text);
-    background-color: var(--accent-color);
-    font-size: 16px;
-    line-height: 1.87;
+.hero .button-primary {
+  color: var(--button-text);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
 }
 
 .qualities-title {
-    line-height: 1.14;
-    color: var(--title-text-color);
+  margin-top: 30px;
+  margin-bottom: 0;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+
+.qualities-discr {
+  display: block;
+  margin: 10px 0 0 0;
+  width: 270px;
 }
 
 .section-title {
-    font-size: 36px;
-    line-height: 0.8;
-    text-align: center;
-    color: var(--title-text-color)
+  font-size: 36px;
+  line-height: 0.8;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.specializing {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
 }
 
 .activity-list {
-    line-height: 1.14;
-    text-align: center;
-    color: var(--button-text);
-    background-color: rgba(47, 48, 58, 0.8);
+  line-height: 1.14;
+  text-align: center;
+  color: var(--button-text);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.employees {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employees > .item {
+  margin: 0;
+  padding: 0;
+}
+
+.employees .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    color: var(--title-text-color);
+  margin: 30px auto 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
 }
 
 .empl-specialty {
-    font-size: 16px;
-    line-height: 1.18;
+  display: block;
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+}
+
+.social-networks > .item {
+  padding: 12px 12px 12px 12px;
+  margin: 16px 0px 0 0;
+}
+
+.social-networks > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.clients {
+  display: flex;
+}
+
+.clients > .item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  margin: 50px 0 94px 0;
+  padding: auto;
+}
+
+.clients .item + .item {
+  margin-left: 30px;
+}
+
+.clients-logo {
+  display: flex;
 }
 
 .logo-footer {
-    color: var(--white-text);
-    font-family: Raleway;
-    font-size: 26px;
-    line-height: 1.19;
+  margin: 45px 147px 8px 0;
+  color: var(--white-text);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .adress {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--button-text);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--button-text);
+  display: block;
+}
+
+footer > .container {
+  display: flex;
+}
+
+.for-align {
+  width: 300px;
+  margin-right: 69px;
+  margin: 57px;
 }
 
 .footer-link {
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 
 .footer-title {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03rem;
-    color: var(--button-text);
+  text-align: left
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03rem;
+  color: var(--button-text);
+}
+
+footer address {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-networks>.item {
+    margin-left: 0px;
+    margin-right: auto;
+    padding-left: 0;
 }
 
 .copyright {
-    font-size: 12px;
-    line-height: 2;
-    text-align: center;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
 }
 
 /* portfolio  */
 
 .filter {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    color: var(--title-text-color);
-    background-color: #F5F4FA;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
 }
 
 .link-filter:hover,
 .link-filter:focus {
-    background-color: var(--accent-color);
-    color: var(--button-text);
+  background-color: var(--accent-color);
+  color: var(--button-text);
 }
 
 .portfolio-title {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06rem;
-    color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06rem;
+  color: var(--title-text-color);
 }
 
 .category-portfolio {
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
 }
 
 .portfolio-description {
-    font-size: 18px;
-    line-height: 1.56;
-    color: var(--white-text);
-    background-color: var(--accent-color);
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white-text);
+  background-color: var(--accent-color);
 }
