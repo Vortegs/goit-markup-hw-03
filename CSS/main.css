@@ -159,6 +159,18 @@ header > .container {
   margin-top: 94px;
 }
 
+.background-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+}
+
+.background-icon>img {
+  margin: auto ;
+}
+
+
 .qualities-title {
   margin-top: 30px;
   margin-bottom: 0;
