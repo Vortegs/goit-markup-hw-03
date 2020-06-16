@@ -280,6 +280,7 @@ footer {
 
 .logo-footer {
   margin: 45px 147px 8px 0;
+
   color: var(--white-text);
   font-family: Raleway;
   font-size: 26px;
@@ -301,7 +302,6 @@ footer > .container {
 
 .for-align {
   width: 300px;
-  margin-right: 69px;
   margin: 57px;
 }
 
