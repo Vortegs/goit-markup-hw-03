@@ -60,7 +60,6 @@ header > .container {
   align-items: center;
   margin: 0 auto 0 200px;
   padding: 0;
-
 }
 
 .site-nav {
@@ -283,6 +282,7 @@ header > .container {
 
 footer {
     width: 1600px;
+    margin: 0 auto;
 }
 
 .logo-footer {
