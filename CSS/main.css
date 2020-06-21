@@ -51,7 +51,7 @@ figure {
 
 .container {
   width: 1200px;
-  margin: 0 200px 0 200px;
+  margin: 0 auto;
   padding: 94px 15px 94px 15px;
 }
 
@@ -123,11 +123,11 @@ header > .container {
 
 .hero-section {
 
-    margin: 0;
+    margin: 0 auto;
     max-width: 1600px;
     height: 600px;
     text-align: center;
-    background-color: #84d9b3;
+    background-color: #f5f4fa;
 }
 
 .hero {
@@ -183,7 +183,10 @@ header > .container {
 }
 
 .qualities-discr {
-  display: block;
+  display: flex;
+  align-self: center;
+  width: 270px;
+  height: 75px;
   margin: 10px 0 0 0;
   width: 270px;
 }
@@ -402,6 +405,10 @@ footer address {
 }
 
 .portfolio-description {
+  display: flex;
+  align-items: center;
+  width: 322px;
+  height: 168px;
   margin: 0;
   font-size: 18px;
   line-height: 1.56;
