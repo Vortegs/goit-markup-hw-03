@@ -207,6 +207,12 @@ header > .container {
 }
 
 .activity-list {
+  display: flex;
+  width: 370px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  
   line-height: 1.14;
   text-align: center;
   color: var(--button-text);
@@ -406,10 +412,11 @@ footer address {
 
 .portfolio-description {
   display: flex;
-  align-items: center;
-  width: 322px;
-  height: 168px;
-  margin: 0;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  margin: 0 auto;
+
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-text);
