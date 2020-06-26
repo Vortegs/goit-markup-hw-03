@@ -58,8 +58,8 @@ figure {
 header > .container {
   display: flex;
   align-items: center;
-  margin: 0 auto 0 200px;
-  padding: 0;
+  margin: 0 auto 0 auto;
+  padding: 0 15px;
 }
 
 .site-nav {
@@ -75,6 +75,10 @@ header > .container {
 .head-contact {
   display: flex;
   margin-left: auto;
+}
+
+.head-contact img {
+  padding-right: 10px;
 }
 
 .head-contact .item + .item {
@@ -287,7 +291,7 @@ header > .container {
 }
 
 footer {
-    width: 1600px;
+    max-width: ;: 1600px;
     margin: 0 auto;
 }
 
@@ -310,8 +314,6 @@ footer {
 
 footer > .container {
   display: flex;
-  margin: 0 0 0 200px;
-  padding: 60px 15px 60px 15px;
 }
 
 .for-align {
@@ -370,6 +372,7 @@ footer address {
 
 }
 .filter {
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -391,8 +394,8 @@ footer address {
 }
 
 .container-portfolio {
-  padding: 0 5px 0 15px;
-  margin: 50px 200px 94px 200px;
+  padding: 0 15px 0 15px;
+  margin: 50px auto 94px auto;
 }
 .portfolio-title {
   margin: 20px auto 4px 24px;
